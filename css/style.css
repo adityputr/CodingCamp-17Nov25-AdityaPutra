@@ -3,6 +3,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: #fdfff5;
 }
+
+.home {
+    width: 100px;
+    height: 100px;
+}
+
 /* Navbar */
 header {
     display: flex;
