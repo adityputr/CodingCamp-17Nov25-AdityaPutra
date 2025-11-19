@@ -24,3 +24,8 @@ nav a {
     color: #101314;
     font-weight: 600;
 }
+
+/* Section */
+.section {
+    padding: 60px 40px;
+}
