@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fdfff5;
+}
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    background: #f7f5ff;
+    z-index: 10;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+    color: #101314;
+    font-weight: 600;
+}
