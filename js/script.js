@@ -1,3 +1,13 @@
+// window.addEventListener("load", function () {
+//     let name = prompt("Masukkan nama kamu:");
+
+//     if (name === null || name.trim() === "") {
+//         name = "Guest";
+//     }
+
+//     document.getElementById("welcome").innerText = `Hi ${name}!, Welcome to My Website`;
+// });
+
 // Form Validation + Print result
 function submitForm() {
     let name = document.getElementById("name").value.trim();

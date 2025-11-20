@@ -4,22 +4,20 @@ body {
     background: #fdfff5;
 }
 
-.home {
-    width: 100px;
-    height: 100px;
-}
-
 /* Navbar */
 header {
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px;
     position: sticky;
     top: 0;
-    background: #f7f5ff;
+    background: #101314;
     z-index: 10;
+    background: rgba(255, 255, 255, 0.2);   /* transparan */
+    backdrop-filter: blur(12px);           /* efek blur */
 }
+
 nav ul {
     display: flex;
     gap: 20px;
@@ -31,31 +29,49 @@ nav a {
     font-weight: 600;
 }
 
-/* Section */
-.section {
-    padding: 60px 40px;
-}
-
-.home .banner,
-.profile-banner {
-    margin: 40px 0;
-    padding: 80px;
-    border: 1px dashed gray;
-    text-align: center;
-}
-
-.cicle {
-    width: 100px;
-    height: 100px;
-    border: 1px solid #aaa;
-    border-radius: 50%;
-    margin: auto;
-}
-
-.hq-container {
+/* Home */
+.home-bg {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../hq.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 40px;
+    padding-top: 80px;
+    color: #fdfff5;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Our Profile */
+.profile-section {
+    padding: 100px 40px;
+    background-color: #101314;   /* warna background, bisa diganti */
+    min-height: 100vh;           /* full 1 layar */
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: flex-start; /* posisi konten */
+    color: #fdfff5;
+    text-shadow: 2px 2px 5px black;
+}
+.profile-about {
+    padding-top: 100px;
+}
+
+/* Message Us */
+.message-section {
+    padding: 100px 40px;
+    background-color: #e4e4e4;   /* warna background, bisa diganti */
+    min-height: 100vh;           /* full 1 layar */
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: flex-start; /* posisi konten */
+    color: #101314;
+    text-shadow: 2px 2px 5px black;
 }
 
 /* Form */
@@ -76,10 +92,6 @@ form {
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
-    }
-    .hq-container {
-        flex-direction: column;
-        align-items: center;
     }
     .form-container {
         flex-direction: column;
