@@ -1,12 +1,12 @@
-// window.addEventListener("load", function () {
-//     let name = prompt("Masukkan nama kamu:");
+window.addEventListener("load", function () {
+    let name = prompt("Masukkan nama kamu:");
 
-//     if (name === null || name.trim() === "") {
-//         name = "Guest";
-//     }
+    if (name === null || name.trim() === "") {
+        name = "Guest";
+    }
 
-//     document.getElementById("welcome").innerText = `Hi ${name}!, Welcome to My Website`;
-// });
+    document.getElementById("welcome").innerText = `Hi ${name}! Welcome to My Website`;
+});
 
 // Form Validation + Print result
 function submitForm() {
@@ -33,5 +33,5 @@ function submitForm() {
         Pesan: ${msg}<br>
     `;
 
-    return false; // prevent page reload
+    return false;
 }
