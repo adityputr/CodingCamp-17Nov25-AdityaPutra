@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: #fdfff5;
+    background: #f9e4bc;
 }
 
 /* Navbar */
@@ -43,7 +43,6 @@ nav a {
 
 /* Home */
 .home-bg {
-    width: 100%;
     min-height: 100vh;
     background-image: url('../img/hq.jpg');
     background-size: cover;
@@ -68,6 +67,9 @@ nav a {
     justify-content: flex-start;
     color: #fdfff5;
     text-shadow: 2px 2px 5px black;
+    overflow-wrap: break-word;   /* Membuat teks pecah otomatis */
+    word-wrap: break-word;       /* Dukungan browser lama */
+    hyphens: auto;
 }
 .profile-about {
     padding-top: 80px;
