@@ -29,18 +29,6 @@ nav a {
     font-weight: 600;
 }
 
-/* Tombol Hamburger */
-.hamburger {
-    font-size: 32px;
-    cursor: pointer;
-    display: none;
-    user-select: none;
-    color: #101314;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 /* Home */
 .home-bg {
     width: 100%;
@@ -187,26 +175,13 @@ form {
 
 /* Responsive */
 @media (max-width: 768px) {
-
-    .hamburger {
-        display: block;
-    }
-
     nav ul {
-        display: none;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background: rgba(255, 255, 255, 0.9);
-        width: 100%;
         flex-direction: column;
-        text-align: center;
-        padding: 20px 0;
-        gap: 30px;
-        backdrop-filter: blur(10px);
     }
-
-    nav ul.show {
-        display: flex;   /* tampil ketika tombol ditekan */
+    .form-container {
+        flex-direction: column;
+    }
+    form, .result-box {
+        width: 100%;
     }
 }
