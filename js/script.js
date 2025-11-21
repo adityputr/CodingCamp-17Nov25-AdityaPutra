@@ -1,3 +1,4 @@
+// Nama
 window.addEventListener("load", function () {
     let name = prompt("Masukkan nama kamu:");
 
@@ -7,6 +8,12 @@ window.addEventListener("load", function () {
 
     document.getElementById("welcome").innerText = `Hi ${name}! Welcome to My Website`;
 });
+
+// Hamburger
+function toggleMenu() {
+    document.querySelector("nav ul").classList.toggle("show");
+}
+
 
 // Form Validation + Print result
 function submitForm() {
