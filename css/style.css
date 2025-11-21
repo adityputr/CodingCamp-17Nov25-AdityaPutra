@@ -28,6 +28,16 @@ nav a {
     color: #101314;
     font-weight: 600;
 }
+/* Tombol Hamburger */
+.hamburger {
+    font-size: 32px;
+    cursor: pointer;
+    display: none;
+    user-select: none;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 /* Home */
 .home-bg {
@@ -50,7 +60,7 @@ nav a {
     background-color: #101314;
     min-height: 100vh;
     display: flex;
-    text-align: justify;
+    text-align: left;
     flex-direction: column;
     justify-content: flex-start;
     color: #fdfff5;
@@ -174,13 +184,26 @@ form {
 
 /* Responsive */
 @media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
     nav ul {
-        flex-direction: column;
-    }
-    .form-container {
-        flex-direction: column;
-    }
-    form, .result-box {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgba(255, 255, 255, 0.9);
         width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        gap: 30px;
+        backdrop-filter: blur(10px);
+    }
+
+    nav ul.show {
+        display: flex;
     }
 }
