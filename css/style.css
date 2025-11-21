@@ -31,7 +31,6 @@ nav a {
 
 /* Home */
 .home-bg {
-    width: 100%;
     min-height: 100vh;
     background-image: url('../img/hq.jpg');
     background-size: cover;
