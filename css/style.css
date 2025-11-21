@@ -206,4 +206,13 @@ form {
     nav ul.show {
         display: flex;
     }
+
+    .form-container {
+        flex-direction: column;
+    }
+    form, .result-box {
+        width: 100%;
+        order: 2;
+        min-height: auto;
+    }
 }
